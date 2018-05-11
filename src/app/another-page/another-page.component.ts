@@ -1,3 +1,4 @@
+import { SessionService } from './../services/session.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnotherPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ss:SessionService) { 
+
+  }
 
   ngOnInit() {
   }

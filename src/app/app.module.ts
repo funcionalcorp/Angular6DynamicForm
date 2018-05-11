@@ -1,3 +1,4 @@
+import { SessionService } from './services/session.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -24,7 +25,7 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     FormsModule,
     CommonModule
   ],
-  providers: [],
+  providers: [SessionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
