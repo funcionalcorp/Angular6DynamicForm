@@ -19,10 +19,6 @@ export class DynamicFormComponent implements OnInit {
     { id : 3, name: 'decimal'}
   ];
 
-  selectedType = 0;
-
-  selectedTypeValue : any;
-
   fields :Array<any> = [{ name : 'name', type : 1 }];
 
   addField = function() {
